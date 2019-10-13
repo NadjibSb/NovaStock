@@ -1,17 +1,17 @@
 <Alloy autoStyle="true">
-	<View id="navBarContainer" class="backgroundGradient">
+	<View id="navBarContainer">
         <View class="navBarTitle">
             <Label id="titleWindow"  />
         </View>
 		<View id="separator" />
-		<View id="zoneClickRight" module="module/touchView" onClick="rightButtonClick">
+		<View id="zoneClickRight" onClick="rightButtonClick">
 			<View class="iconContainer">
-				<ImageView id="rightButton" class="touchDisable" />
+				<ImageView id="rightButton"/>
 			</View>
 		</View>
-		<View id="zoneClickLeft" module="module/touchView" onClick="leftButtonClick">
+		<View id="zoneClickLeft" onClick="leftButtonClick">
 			<View class="iconContainer">
-				<ImageView id="leftButton" class="touchDisable" />
+				<ImageView id="leftButton" />
 			</View>
 		</View>
 	</View>

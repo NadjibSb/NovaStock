@@ -1,5 +1,9 @@
-function doClick(e) {
-	alert($.label.text);
-}
+// DEPENDENCIES
+const log = require( '/services/logger' )( {
+		tag: "root index",
+		hideLog: false
+	} );
 
-$.index.open();
+var navManager = require("/services/navManager");
+
+navManager.openWindow("register/index");

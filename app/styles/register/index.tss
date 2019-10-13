@@ -1,0 +1,6 @@
+
+
+'#navBar': {
+    title: 'Register',
+    backgroundColor: 'red'
+}
