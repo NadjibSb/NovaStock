@@ -1,10 +1,16 @@
 {
-	"global": {},
-	"env:development": {},
-	"env:test": {},
-	"env:production": {},
-	"os:android": {},
-	"os:ios": {},
-	"os:windows": {},
-	"dependencies": {}
+    "global": {},
+    "env:development": {},
+    "env:test": {},
+    "env:production": {},
+    "os:android": {},
+    "os:ios": {},
+    "os:windows": {},
+    "dependencies": {
+        "customNavBar": "*",
+        "dzmob.widget.TextField": "*",
+        "customIndicatorInsideView": "*",
+        "progressBox": "*",
+        "AndroidPicker": "*"
+    }
 }

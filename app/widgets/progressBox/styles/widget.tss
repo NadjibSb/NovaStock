@@ -1,0 +1,89 @@
+
+
+'.insideContainer': {
+    layout: 'vertical',
+    top: 16,
+    bottom: 8,
+    right: 16,
+    left: 16
+}
+
+'#container': {
+    width: "60%",
+    borderRadius: 10,
+    backgroundColor: 'white',
+    bubbleParent: false,
+    elevation: 10
+}
+
+"#indecator":{
+	visible: true,
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	touchEnabled : false,
+	bubbleParent: true
+}
+"#indecator[platform=ios]": {
+	style: Titanium.UI.ActivityIndicatorStyle.BIG,
+	indicatorColor: "#58b783"
+}
+"#indecator[platform=android]": {
+	style: Titanium.UI.ActivityIndicatorStyle.BIG_DARK,
+	indicatorColor: "#58b783"
+}
+
+'#buttons': {
+    right: 8
+}
+
+
+'#vue': {
+    zIndex: 100,
+    backgroundColor: "#66EEEEEE",
+    bubbleParent: false
+}
+
+'#title': {
+    font: {
+        fontSize: 14
+    },
+    color: 'black'
+}
+
+'#checkContainer': {
+    top: 16,
+    bottom: 8,
+    borderWidth: 3,
+    borderColor: "#58b783",
+    borderRadius: 45,
+    visible: false
+}
+
+'#checkImg': {
+    image:"/images/checkmark.png",
+    height:60,
+    width:60,
+    top: 15,
+    bottom: 15,
+    left: 15,
+    right: 15,
+}
+
+'#crossContainer': {
+    top: 16,
+    bottom: 8,
+    borderWidth: 3,
+    borderColor: "#D52505",
+    borderRadius: 45,
+    visible: false
+}
+
+'#crossImg': {
+    image:"/images/crossmark.png",
+    height:60,
+    width:60,
+    top: 15,
+    bottom: 15,
+    left: 15,
+    right: 15,
+}

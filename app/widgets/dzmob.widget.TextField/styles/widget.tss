@@ -1,0 +1,43 @@
+"#container": {
+	height: Ti.UI.SIZE,
+	layout: "vertical",
+	left: 0,
+	right: 0,
+	bubbleParent : false,
+}
+"#subView":{
+	height : Ti.UI.SIZE
+}
+".input": {
+	backgroundColor : 'transparent',
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT
+	}
+
+"#tfInput": {
+	left : 0,
+	right : 0,
+	top: 0,
+	inputColor : 'black',
+	autocorrect : false,
+	font: {
+		fontSize : 16
+	},
+	height: Titanium.UI.FILL,
+  autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+  hintTextColor: "#929292",
+},
+
+
+
+"#lineBar" : {
+	height : 1,
+	bottom: 0
+},
+
+"#messageErorLogin" : {
+	color : "red",
+	bottom : 0,
+	left : 0,
+	height : 0,
+	font : {fontSize : 13}
+}

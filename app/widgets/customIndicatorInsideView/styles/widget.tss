@@ -1,0 +1,31 @@
+
+"#activityContainer":{
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	zIndex: 10000,
+	touchEnabled : false,
+	bubbleParent: false,
+    visible: true
+}
+
+"#activityContainer[if=$.args.blockScreen]":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+    backgroundColor: "#66AAAAAA"
+}
+
+"#activityIndicator":{
+	visible: true,
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	touchEnabled : false,
+	bubbleParent: true
+}
+"#activityIndicator[platform=ios]": {
+	style: Titanium.UI.ActivityIndicatorStyle.BIG,
+	indicatorColor: "#58b783"
+}
+"#activityIndicator[platform=android]": {
+	style: Titanium.UI.ActivityIndicatorStyle.BIG_DARK,
+    indicatorColor: "#58b783"
+}

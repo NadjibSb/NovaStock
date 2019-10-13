@@ -24,3 +24,37 @@ overrode the settings with other TSS, XML, or JS settings:
 }
 
 */
+
+// Sizes
+"Window": {
+    backgroundColor: 'white',
+    swipeToClose: false,
+    orientationModes: Ti.UI.PORTRAIT
+}
+"Window[platform=ios]": {
+    width: Ti.Platform.displayCaps.platformWidth,
+    statusBarStyle: Ti.UI.iOS.StatusBar.LIGHT_CONTENT,
+    navBarHidden: "true",
+}
+
+"Window[platform=android]":{
+    theme : 'Theme.AppCompat.NoTitleBar',
+    top: 25
+}
+
+".wSize":{
+	width: Ti.UI.SIZE,
+}
+
+".hSize":{
+	height: Ti.UI.SIZE,
+}
+
+//layouts
+".vLayout":{
+    layout: 'vertical'
+}
+
+".hLayout":{
+    layout: 'horizontal'
+}

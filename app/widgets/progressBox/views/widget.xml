@@ -1,0 +1,18 @@
+<Alloy>
+    <View id="vue" onClick="exit">
+        <View id="container" class="hSize">
+            <View class="insideContainer hSize">
+                <Label id="title" text="Syncroniser ..."></Label>
+                <View class="hSize">
+                    <ActivityIndicator id="indecator"></ActivityIndicator>
+                    <View id="checkContainer" class="hSize wSize">
+                        <ImageView id="checkImg"></ImageView>
+                    </View>
+                    <View id="crossContainer" class="hSize wSize">
+                        <ImageView id="crossImg"></ImageView>
+                    </View>
+                </View>
+            </View>
+        </View>
+    </View>
+</Alloy>

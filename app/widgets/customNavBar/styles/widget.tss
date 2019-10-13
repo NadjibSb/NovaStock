@@ -1,0 +1,65 @@
+
+"#navBarContainer":{
+	left : 0,
+	top: 0,
+	height: 64
+}
+
+"#navBarContainer[platform=android]":{
+	left : 0,
+	top: 0,
+	height: 56
+}
+
+
+"#zoneClickLeft":{
+	left: 0,
+	width: Titanium.UI.SIZE,
+	visible : false,
+	touchEnabled: false
+}
+
+"#zoneClickRight":{
+	right : 0,
+	width: Ti.UI.SIZE,
+	visible : false,
+	touchEnabled: false
+}
+
+"#separator":{
+	height: 1,
+	backgroundColor: "transparent",
+	bottom : 0,
+	touchEnabled: false,
+	bubbleParent: true
+}
+
+".iconContainer" : {
+    left: 16,
+    right: 16,
+    height: 24,
+    width: 24
+}
+
+".iconContainer[platform=ios]" : {
+    bottom: 11,
+}
+
+'#titleWindow': {
+  color: "white",
+  font: {
+    fontSize: 20
+  },
+  height: 23,
+
+}
+
+
+'.navBarTitle': {
+    height: Ti.UI.SIZE,
+    right: 56,
+    left: 56
+}
+'.navBarTitle[platform=ios]': {
+  bottom:10,
+}
