@@ -1,2 +1,10 @@
-// Arguments passed into this controller can be accessed via the `$.args` object directly or:
-var args = $.args;
+// DEPENDENCIES
+const log = require( '/services/logger' )( {
+		tag: "register index",
+		hideLog: false
+	} );
+
+
+function btnOnClick(e){
+    log("click", e.buttonId);
+}

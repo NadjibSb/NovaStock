@@ -2,5 +2,20 @@
 
 '#navBar': {
     title: 'Register',
-    backgroundColor: 'red'
+    backgroundColor: Alloy.CFG.style.color.primaryColor
+}
+
+'.logo': {
+    top: 56,
+    width: "60%",
+    image: "/images/logo_novartis_register_mobile.png"
+}
+
+'#btnStart': {
+    text: L("register_btn_start"),
+    buttonId: "start",
+    color: Alloy.CFG.style.color.primaryColor,
+    fontColor: "white",
+    right: "10%",
+    left: "10%"
 }

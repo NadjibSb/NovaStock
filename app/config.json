@@ -1,5 +1,12 @@
 {
-    "global": {},
+    "global": {
+        "style":{
+            "color":{
+                "primaryColor": "#F8A933",
+                "btnDisabled": "#BABABA"
+            }
+        }
+    },
     "env:development": {},
     "env:test": {},
     "env:production": {},
@@ -10,6 +17,7 @@
         "customNavBar": "*",
         "dzmob.widget.TextField": "*",
         "customIndicatorInsideView": "*",
-        "progressBox": "*"
+        "progressBox": "*",
+        "buttonWithIcon": "*"
     }
 }

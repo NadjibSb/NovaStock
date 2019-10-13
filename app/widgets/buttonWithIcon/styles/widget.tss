@@ -1,0 +1,21 @@
+
+'#viewButton': {
+    height: 55,
+    backgroundColor: 'lightgray',
+    borderRadius: 5,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    elevation: 3,
+}
+
+'#content': {
+    horizontalWrap: false
+}
+
+'#label': {
+    left : 16,
+    font: {
+        fontSize: 18
+    },
+    color: 'black',
+    text: "btn_text"
+}

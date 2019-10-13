@@ -1,0 +1,8 @@
+<Alloy>
+	<View id="viewButton" onClick="buttonClick" >
+        <View id="content" class="wSize hLayout">
+            <ImageView id="image_button"></ImageView>
+            <Label id="label"></Label>
+        </View>
+    </View>
+</Alloy>
