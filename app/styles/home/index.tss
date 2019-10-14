@@ -1,0 +1,6 @@
+
+
+'#navBar': {
+    title: L("home_title"),
+    backgroundColor: Alloy.CFG.style.color.primaryColor
+}

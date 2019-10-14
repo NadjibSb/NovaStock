@@ -2,11 +2,13 @@
     <Window>
         <View class="vLayout">
             <Widget src="customNavBar" id="navBar"></Widget>
-            <ScrollView class="vLayout" scrollType="vertical">
-                <ImageView class="logo"></ImageView>
-                <Widget id="tfName" src="textField" onFocus="onTfFocus"></Widget>
+            <View>
+                <ScrollView top="0" class="vLayout" scrollType="vertical">
+                    <ImageView class="logo"></ImageView>
+                    <Widget id="tfName" src="textField"></Widget>
+                </ScrollView>
                 <Widget id="btnStart" src="buttonWithIcon" onClick="btnOnClick"></Widget>
-            </ScrollView>
+            </View>
         </View>
     </Window>
 </Alloy>

@@ -30,13 +30,14 @@ var args = arguments[ 0 ] || {};
     $.tf.addEventListener('focus', (e)=>{
         $.tfContainer.backgroundColor = "#201461AB";
         $.separator.backgroundColor = "#1461AB";
-        $.separator.height = 3;
+        $.separator.height = 2;
+        $.errorContainer.visible = false
         $.trigger('focus' , e)
     });
     $.tf.addEventListener('blur', (e)=>{
         $.tfContainer.backgroundColor = "transparent";
         $.separator.backgroundColor = "#000";
-        $.separator.height = 2;
+        $.separator.height = 1;
     });
 
 })();

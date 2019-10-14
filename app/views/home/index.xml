@@ -1,0 +1,7 @@
+<Alloy>
+    <Window>
+        <View class="vLayout">
+            <Widget src="customNavBar" id="navBar"></Widget>
+        </View>
+    </Window>
+</Alloy>

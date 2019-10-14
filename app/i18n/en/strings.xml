@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
     <!-- Register -->
+	<string name="register_title">Enregistrement</string>
 	<string name="register_btn_start">Commencer</string>
+	<string name="register_tf_error">Veuillez entrer le nom d'utilisateur.</string>
+	<string name="register_hint_text">Nom d'utilisateur</string>
+
+    <!-- home -->
+	<string name="home_title">Menu Principale</string>
 </resources>

@@ -6,4 +6,9 @@ const log = require( '/services/logger' )( {
 
 var navManager = require("/services/navManager");
 
-navManager.openWindow("register/index");
+log(Alloy.Globals.getUserName());
+if (Alloy.Globals.getUserName()) {
+    navManager.openWindow("home/index");
+}else {
+    navManager.openWindow("register/index");
+}

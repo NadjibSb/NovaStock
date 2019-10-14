@@ -12,7 +12,13 @@
 
 
 
-/*
+
 Alloy.Globals.isAndroid = (Ti.Platform.osname=='android') ? true : false;
 Alloy.Globals.isIOS = (Ti.Platform.osname=='iphone') ? true : false;
-*/
+
+Alloy.Globals.setUserName = (name)=>{
+    Ti.App.Properties.setString("novastock.userName",name);
+}
+Alloy.Globals.getUserName = ()=>{
+    return Ti.App.Properties.getString("novastock.userName",null);
+}

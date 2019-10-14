@@ -12,11 +12,13 @@
 '#tf': {
     left: 16,
     right: 16,
-    hintText: "hintText"
+    font: {
+        fontSize: 16
+    }
 }
 
 '#separator': {
-    height: 2,
+    height: 1,
     borderRadius: 1,
     backgroundColor: '#000'
 }
@@ -29,5 +31,8 @@
 '#lbErrorText': {
     left: 0,
     color: 'red',
-    text: "error"
+    text: "error",
+    font:{
+        fontSize: 14
+    }
 }

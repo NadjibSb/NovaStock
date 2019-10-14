@@ -14,11 +14,9 @@
     "os:ios": {},
     "os:windows": {},
     "dependencies": {
-        "customNavBar": "*",
-        "dzmob.widget.TextField": "*",
-        "customIndicatorInsideView": "*",
-        "progressBox": "*",
         "buttonWithIcon": "*",
-        "textField": "1.0"
+        "customIndicatorInsideView": "*",
+        "customNavBar": "*",
+        "textField": "*"
     }
 }

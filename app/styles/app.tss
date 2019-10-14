@@ -28,7 +28,7 @@ overrode the settings with other TSS, XML, or JS settings:
 // Sizes
 "Window": {
     backgroundColor: 'white',
-    swipeToClose: false,
+    //swipeToClose: false,
     orientationModes: Ti.UI.PORTRAIT
 }
 "Window[platform=ios]": {
