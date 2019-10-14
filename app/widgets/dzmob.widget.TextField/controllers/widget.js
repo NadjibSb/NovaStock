@@ -12,7 +12,7 @@ var subjects = _.isString(args.subjects) ? args.subjects.split(",") : args.subje
 var defaultErrorMessage = args.defaultErrorMessage;
 var title = args.title || "";
 var findError = false;
-var hintText = args.hintText
+var hintText = args.hintText;
 
 $.editable = args.editable;
 

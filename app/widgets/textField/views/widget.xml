@@ -1,0 +1,11 @@
+<Alloy>
+    <View id="viewContainer">
+        <View id="tfContainer">
+            <TextField id="tf"></TextField>
+        </View>
+        <View id="separator"></View>
+        <View id="errorContainer">
+            <Label id="lbErrorText"></Label>
+        </View>
+    </View>
+</Alloy>

@@ -17,5 +17,14 @@
     color: Alloy.CFG.style.color.primaryColor,
     fontColor: "white",
     right: "10%",
-    left: "10%"
+    left: "10%",
+    top: 16,
+    bottom: 16
+}
+
+'#tfName': {
+    right: "10%",
+    left: "10%",
+    top: 16,
+    bottom: 16
 }

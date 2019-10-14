@@ -14,7 +14,8 @@
 '#label': {
     left : 16,
     font: {
-        fontSize: 18
+        fontSize: 18,
+        fontFamily: "Lato-Bold",
     },
     color: 'black',
     text: "btn_text"
