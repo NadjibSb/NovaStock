@@ -48,7 +48,8 @@
 '#titleWindow': {
   color: "white",
   font: {
-    fontSize: 20
+    fontSize: 20,
+    fontFamily: "Lato-Bold",
   },
   height: 23,
 

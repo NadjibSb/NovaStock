@@ -4,3 +4,51 @@
     title: L("home_title"),
     backgroundColor: Alloy.CFG.style.color.primaryColor
 }
+
+'.logo': {
+    top: 48,
+    width: "50%",
+    image: "/images/logo_novartis_register_mobile.png"
+}
+
+
+'.btnContainer': {
+    top: 48,
+    bottom: 16
+}
+
+'.btn': {
+    left: "10%",
+    right: "10%",
+    top: 16,
+    fontColor: "white",
+    alignLeft: true
+}
+
+'#newItem': {
+    buttonId: "newItem",
+    color: "#0460A9",
+    text: L("home_btn_newItem"),
+    icon: "/images/icn_new_article_mobile.png"
+}
+
+'#inboundItem': {
+    buttonId: "inboundItem",
+    color: "#E74A21",
+    text: L("home_btn_inboundItem"),
+    icon: "/images/icn_inbound_mobile.png"
+}
+
+'#outboundItem': {
+    buttonId: "outboundItem",
+    color: "#EC9A1E",
+    text: L("home_btn_outboundItem"),
+    icon: "/images/icn_outbound_mobile.png"
+}
+
+'#inventory': {
+    buttonId: "inventory",
+    color: "#34B770",
+    text: L("home_btn_inventory"),
+    icon: "/images/icn_inventory_mobile.png"
+}

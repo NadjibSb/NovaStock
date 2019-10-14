@@ -2,6 +2,15 @@
     <Window>
         <View class="vLayout">
             <Widget src="customNavBar" id="navBar"></Widget>
+            <ScrollView class="vLayout" scrollType="vertical">
+                <ImageView class="logo"></ImageView>
+                <View class="btnContainer vLayout hSize">
+                    <Widget id="newItem" class="btn" src="buttonWithIcon"></Widget>
+                    <Widget id="inboundItem" class="btn" src="buttonWithIcon"></Widget>
+                    <Widget id="outboundItem" class="btn" src="buttonWithIcon"></Widget>
+                    <Widget id="inventory" class="btn" src="buttonWithIcon"></Widget>
+                </View>
+            </ScrollView>
         </View>
     </Window>
 </Alloy>

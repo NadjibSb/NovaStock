@@ -8,4 +8,8 @@
 
     <!-- home -->
 	<string name="home_title">Menu Principale</string>
+	<string name="home_btn_newItem">Nouvel Article</string>
+	<string name="home_btn_inboundItem">Article entrant</string>
+	<string name="home_btn_outboundItem">Article sortant</string>
+	<string name="home_btn_inventory">Inventaire</string>
 </resources>
