@@ -6,5 +6,11 @@ const log = require( '/services/logger' )( {
 
 
 function btnOnClick(e){
-    log("click", e.buttonId);
+    log($.tfName.getText(), e.buttonId);
+    //$.tfName.hideErrorMessage();
+    $.tfName.blur();
+}
+
+function onTfFocus(e){
+    //$.tfName.showErrorMessage("showErrorMessage");
 }

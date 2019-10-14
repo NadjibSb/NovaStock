@@ -6,7 +6,6 @@
 }
 
 '#tfContainer': {
-    backgroundColor: 'cyan',
     height: 54,
 }
 
