@@ -18,6 +18,7 @@
     fontColor: "white",
     right: "10%",
     left: "10%",
+    top: "15%",
     bottom: 32
 }
 

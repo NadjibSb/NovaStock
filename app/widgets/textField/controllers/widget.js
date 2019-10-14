@@ -30,14 +30,14 @@ var args = arguments[ 0 ] || {};
     $.tf.addEventListener('focus', (e)=>{
         $.tfContainer.backgroundColor = "#201461AB";
         $.separator.backgroundColor = "#1461AB";
-        $.separator.height = 2;
+        $.separator.height = 3;
         $.errorContainer.visible = false
         $.trigger('focus' , e)
     });
     $.tf.addEventListener('blur', (e)=>{
         $.tfContainer.backgroundColor = "transparent";
-        $.separator.backgroundColor = "#000";
-        $.separator.height = 1;
+        $.separator.backgroundColor = "#AA000000";
+        $.separator.height = 2;
     });
 
 })();
@@ -45,13 +45,13 @@ var args = arguments[ 0 ] || {};
 function showErrorMessage(text){
     $.lbErrorText.text = text;
     $.lbErrorText.color = "#FF0000";
+    $.errorContainer.visible = true;
     $.tfContainer.backgroundColor = "#19FF0000";
     $.separator.backgroundColor = "#FF0000";
-    $.errorContainer.visible = true
 }
 
 function hideErrorMessage(){
-    $.separator.backgroundColor = "#000";
+    $.separator.backgroundColor = "#AA000000";
     $.tfContainer.backgroundColor = "transparent";
     $.errorContainer.visible = false
 }
