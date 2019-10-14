@@ -1,0 +1,6 @@
+
+'#navBar': {
+    title: L("inventory_title"),
+    backgroundColor: Alloy.CFG.style.color.primaryColor,
+    leftIcon: "/images/icn_topbar_back_mobile.png"
+}

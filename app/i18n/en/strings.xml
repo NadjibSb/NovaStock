@@ -12,4 +12,19 @@
 	<string name="home_btn_inboundItem">Article entrant</string>
 	<string name="home_btn_outboundItem">Article sortant</string>
 	<string name="home_btn_inventory">Inventaire</string>
+
+
+
+    <!-- newItem -->
+	<string name="newItem_title">Nouvel Article</string>
+
+    <!-- inBoundItem -->
+	<string name="inBound_title">Article entrant</string>
+
+    <!-- outBoundItem -->
+	<string name="outBound_title">Article sortant</string>
+
+    <!-- inventory -->
+	<string name="inventory_title">Inventaire</string>
+
 </resources>

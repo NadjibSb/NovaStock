@@ -83,7 +83,7 @@ function closeWindow(controller) {
     }else{
         log(controller.args, "closeWindow > ========== Close ");
         stackController.pop();
-        currentNavWindow.closeWindow(controller.getView(), {animated: false});
+        currentNavWindow.closeWindow(controller.getView(), {animated: true});
     }
 };
 

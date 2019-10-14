@@ -10,8 +10,8 @@ var navManager = require("/services/navManager");
 
 function btnOnClick(e){
     log($.tfName.getText(), e.buttonId);
-    //$.tfName.hideErrorMessage();
     $.tfName.blur();
+
     if ($.tfName.getText() && ($.tfName.getText() != "")) {
         let name = $.tfName.getText();
         Alloy.Globals.setUserName(name);

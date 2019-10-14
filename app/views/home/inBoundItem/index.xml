@@ -1,0 +1,10 @@
+<Alloy>
+    <Window>
+        <View class="vLayout">
+            <Widget src="customNavBar" id="navBar" onLeftButtonClick="navigateUp"></Widget>
+            <ScrollView class="vLayout" scrollType="vertical">
+
+            </ScrollView>
+        </View>
+    </Window>
+</Alloy>
