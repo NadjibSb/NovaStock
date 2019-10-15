@@ -17,6 +17,12 @@
 
     <!-- newItem -->
 	<string name="newItem_title">Nouvel Article</string>
+	<string name="newItem_description">Veuillez emplire les champs suivants :</string>
+    <string name="newItem_tf_name">Nom de l'article</string>
+	<string name="newItem_tf_num">Numéro P3 de l'article</string>
+	<string name="newItem_tf_date">Date d'expiration</string>
+	<string name="newItem_tf_nbr">Quantité de l'article entrant</string>
+    <string name="newItem_QR_desc">Scannez le QR code de l'article</string>
 
     <!-- inBoundItem -->
 	<string name="inBound_title">Article entrant</string>
@@ -27,4 +33,7 @@
     <!-- inventory -->
 	<string name="inventory_title">Inventaire</string>
 
+
+
+	<string name="btn_save">Sauvegarder</string>
 </resources>

@@ -3,7 +3,18 @@
         <View class="vLayout">
             <Widget src="customNavBar" id="navBar" onLeftButtonClick="navigateUp"></Widget>
             <ScrollView class="vLayout" scrollType="vertical">
-
+                <View class="hSize vLayout">
+                    <Label class="lbDescroption"/>
+                    <Widget id="tfName" class="tf" src="textField"></Widget>
+                    <Widget id="tfNum" class="tf" src="textField"></Widget>
+                    <Widget id="tfDate" class="tf" src="textField"></Widget>
+                    <Widget id="tfNbr" class="tf" src="textField"></Widget>
+                </View>
+                <View class="hSize vLayout">
+                    <Label class="QRtext"/>
+                    <ImageView class="QRimage"></ImageView>
+                </View>
+                <Widget id="btnSave" src="buttonWithIcon"></Widget>
             </ScrollView>
         </View>
     </Window>

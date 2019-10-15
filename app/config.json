@@ -4,6 +4,13 @@
             "color": {
                 "primaryColor": "#F8A933",
                 "btnDisabled": "#BABABA"
+            },
+            "font": {
+                "black": "Lato-Black",
+                "bold": "Lato-Bold",
+                "light": "Lato-Light",
+                "regular": "Lato-Regular",
+                "thin": "Lato-Thin"
             }
         }
     },

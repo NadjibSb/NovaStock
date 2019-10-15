@@ -2,6 +2,7 @@
     <View id="viewContainer">
         <View id="tfContainer">
             <TextField id="tf"></TextField>
+            <ImageView id="icon"></ImageView>
         </View>
         <View id="separator"></View>
         <View id="errorContainer">

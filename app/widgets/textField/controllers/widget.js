@@ -15,6 +15,7 @@ var args = arguments[ 0 ] || {};
 *       bottom {Int}
 *       left {Int}
 *       right {Int}
+*       icon {image}
     }
 **/
 
@@ -26,6 +27,10 @@ var args = arguments[ 0 ] || {};
     args.right && ($.viewContainer.right = args.right);
     args.hintText && ($.tf.hintText = args.hintText);
 
+    if (args.icon) {
+        $.tf.width = "90%";
+        $.icon.image = args.icon;
+    }
 
     $.tf.addEventListener('focus', (e)=>{
         $.tfContainer.backgroundColor = "#201461AB";

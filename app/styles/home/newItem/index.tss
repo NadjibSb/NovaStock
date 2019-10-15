@@ -4,3 +4,64 @@
     backgroundColor: Alloy.CFG.style.color.primaryColor,
     leftIcon: "/images/icn_topbar_back_mobile.png"
 }
+
+'.tf': {
+    right: "10%",
+    left: "10%",
+    top: 8,
+}
+
+'.lbDescroption': {
+    top: 32,
+    right: "10%",
+    left: "10%",
+    text: L("newItem_description"),
+    color: 'black',
+    font: {
+        fontSize: 18,
+        fontFamily: Alloy.CFG.style.font.regular,
+    }
+}
+
+'#tfName': {
+    hintText: L("newItem_tf_name"),
+    top: 16
+}
+
+'#tfNum': {
+    hintText: L("newItem_tf_num"),
+}
+
+'#tfDate': {
+    hintText: L("newItem_tf_date"),
+    icon: "/images/icn_expiration_date_mobile.png"
+}
+
+'#tfNbr': {
+    hintText: L("newItem_tf_nbr"),
+}
+
+'.QRtext': {
+    text: L("newItem_QR_desc"),
+    top: 32,
+    color: 'black',
+    font: {
+        fontSize: 18,
+        fontFamily: Alloy.CFG.style.font.regular,
+    }
+}
+
+'.QRimage': {
+    image: "/images/icn_scan_mobile.png",
+    top: 16,
+}
+
+'#btnSave': {
+    right: "10%",
+    left: "10%",
+    top: 32,
+    bottom: 16,
+    text: L("btn_save"),
+    color: Alloy.CFG.style.color.primaryColor,
+    fontColor: "white"
+}
