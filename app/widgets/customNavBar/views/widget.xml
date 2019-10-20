@@ -4,12 +4,12 @@
             <Label id="titleWindow"  />
         </View>
 		<View id="separator" />
-		<View id="zoneClickRight" onClick="rightButtonClick">
+		<View id="zoneClickRight" module="module/touchView" onClick="rightButtonClick">
 			<View class="iconContainer">
 				<ImageView id="rightButton"/>
 			</View>
 		</View>
-		<View id="zoneClickLeft" onClick="leftButtonClick">
+		<View id="zoneClickLeft" module="module/touchView" onClick="leftButtonClick">
 			<View class="iconContainer">
 				<ImageView id="leftButton" />
 			</View>

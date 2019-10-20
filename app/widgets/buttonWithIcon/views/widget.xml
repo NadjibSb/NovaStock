@@ -1,5 +1,5 @@
 <Alloy>
-	<View id="viewButton" onClick="buttonClick" >
+	<View id="viewButton" module="module/touchView" onClick="buttonClick" >
         <View id="content" class="wSize hLayout">
             <ImageView id="image_button"></ImageView>
             <Label id="label"></Label>

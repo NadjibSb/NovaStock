@@ -74,7 +74,7 @@ function openWindow(path,params={},newNavWindowFlag, oldNavWindow) {
 };
 
 // to close window
-function closeWindow(controller) {
+function closeWindow(controller, animate= true) {
     log("closeWindow");
     if (OS_ANDROID) {
         var cont = stackController.pop();
@@ -83,11 +83,11 @@ function closeWindow(controller) {
     }else{
         log(controller.args, "closeWindow > ========== Close ");
         stackController.pop();
-        currentNavWindow.closeWindow(controller.getView(), {animated: true});
+        currentNavWindow.closeWindow(controller.getView(), {animated: animate});
     }
 };
 
-function popUpTo(controller, returnTag){
+function popUpTo(controller, returnTag, animate = true){
     controller = stackController.pop();
     if (OS_ANDROID) {
         //closeWindow(controller);
@@ -100,11 +100,16 @@ function popUpTo(controller, returnTag){
 
     }else {
         // popup into the taged controller
+        var currentCont = controller; // stock the current controller (preserve it for the return animation)
+        // close all the previous controllers till the returnTag controller (without animation)
+        controller = stackController.pop();
         while (controller && controller.args && (controller.args.tag != returnTag)) {
             log(controller.args, "popUpTo > ========== Close ");
             currentNavWindow.closeWindow(controller.getView(), {animated: false});
             controller = stackController.pop();
         }
+        // close the curent controller (with/without animation)
+        currentNavWindow.closeWindow(currentCont.getView(), {animated: animate});
     }
     // if the controller existe re-push it to the stack
     if (controller) {
