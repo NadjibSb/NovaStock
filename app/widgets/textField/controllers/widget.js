@@ -16,6 +16,8 @@ var args = arguments[ 0 ] || {};
 *       left {Int}
 *       right {Int}
 *       icon {image}
+*       disabled {boolean}
+*       keyboardType
     }
 **/
 
@@ -26,25 +28,31 @@ var args = arguments[ 0 ] || {};
     args.left && ($.viewContainer.left = args.left);
     args.right && ($.viewContainer.right = args.right);
     args.hintText && ($.tf.hintText = args.hintText);
+    args.keyboardType && ($.tf.keyboardType = args.keyboardType);
 
     if (args.icon) {
         $.tf.width = "90%";
         $.icon.image = args.icon;
     }
-
-    $.tf.addEventListener('focus', (e)=>{
-        $.tfContainer.backgroundColor = "#201461AB";
-        $.separator.backgroundColor = "#1461AB";
-        $.separator.height = 3;
-        $.errorContainer.visible = false
-        $.trigger('focus' , e)
-    });
-    $.tf.addEventListener('blur', (e)=>{
-        $.tfContainer.backgroundColor = "transparent";
-        $.separator.backgroundColor = "#AA000000";
-        $.separator.height = 2;
-    });
-
+    if (!args.disabled) {
+        $.tf.addEventListener('focus', (e)=>{
+            $.tfContainer.backgroundColor = "#201461AB";
+            $.separator.backgroundColor = "#1461AB";
+            $.separator.height = 3;
+            $.errorContainer.visible = false
+            $.trigger('focus' , e)
+        });
+        $.tf.addEventListener('blur', (e)=>{
+            $.tfContainer.backgroundColor = "transparent";
+            $.separator.backgroundColor = "#AA000000";
+            $.separator.height = 2;
+        });
+    }else {
+        $.tf.editable = false;
+        $.tf.addEventListener('click', (e)=>{
+            $.trigger('click' , e)
+        });
+    }
 })();
 
 function showErrorMessage(text){

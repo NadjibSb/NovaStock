@@ -2,9 +2,20 @@
     <Window>
         <View class="vLayout">
             <Widget src="customNavBar" id="navBar" onLeftButtonClick="navigateUp"></Widget>
-            <ScrollView class="vLayout" scrollType="vertical">
-
-            </ScrollView>
+            <View>
+                <ScrollView class="vLayout" scrollType="vertical">
+                    <View class="hSize vLayout">
+                        <Label class="QRtext"/>
+                        <ImageView class="QRimage" onClick="onScanCode"></ImageView>
+                    </View>
+                    <View class="hSize vLayout">
+                        <Widget id="tfName" class="tf" src="textField" onClick="onGetName"></Widget>
+                        <Widget id="tfNbr" class="tf" src="textField"></Widget>
+                    </View>
+                    <Widget id="btnSave" src="buttonWithIcon"></Widget>
+                </ScrollView>
+                <Require id="alertBox" src="/components/customAlertBox"></Require>
+            </View>
         </View>
     </Window>
 </Alloy>

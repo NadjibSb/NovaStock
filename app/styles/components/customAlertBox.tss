@@ -1,0 +1,35 @@
+
+
+'#masque': {
+    backgroundColor: "#66000000",
+    bubbleParent: false,
+    visible: false
+}
+
+'#box': {
+    height: Ti.UI.SIZE,
+    width: "80%",
+    backgroundColor: 'white',
+    borderRadius: 5,
+    bubbleParent: false
+}
+
+'#text': {
+    top: 16,
+    right: "10%",
+    left: "10%",
+    font: {
+        fontSize: 18,
+        fontFamily: Alloy.CFG.style.font.regular,
+    },
+    color: 'black'
+}
+
+'#btn': {
+    right: "10%",
+    left: "10%",
+    top: 32,
+    bottom: 16,
+    color: Alloy.CFG.style.color.primaryColor,
+    fontColor: "white"
+}

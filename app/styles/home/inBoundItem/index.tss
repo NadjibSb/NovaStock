@@ -4,3 +4,47 @@
     backgroundColor: Alloy.CFG.style.color.primaryColor,
     leftIcon: "/images/icn_topbar_back_mobile.png"
 }
+
+'.tf': {
+    right: "10%",
+    left: "10%",
+    top: 8,
+}
+
+
+'#tfName': {
+    hintText: L("inBoundItem_tf_name"),
+    top: 32,
+    disabled: true
+}
+
+'#tfNbr': {
+    hintText: L("inBoundItem_tf_nbr"),
+    keyboardType: Ti.UI.KEYBOARD_TYPE_NUMBER_PAD,
+}
+
+'.QRtext': {
+    text: L("inBoundItem_QR_desc"),
+    top: 32,
+    color: 'black',
+    width: "80%",
+    font: {
+        fontSize: 18,
+        fontFamily: Alloy.CFG.style.font.regular,
+    }
+}
+
+'.QRimage': {
+    image: "/images/icn_scan_mobile.png",
+    top: 16,
+}
+
+'#btnSave': {
+    right: "10%",
+    left: "10%",
+    top: 64,
+    bottom: 16,
+    text: L("btn_save"),
+    color: Alloy.CFG.style.color.primaryColor,
+    fontColor: "white"
+}

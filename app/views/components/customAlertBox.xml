@@ -1,0 +1,8 @@
+<Alloy>
+	<View id="masque" onClick="exit">
+        <View id="box" class="vLayout">
+            <Label id="text"></Label>
+            <Widget id="btn" src="buttonWithIcon" onClick="exit"></Widget>
+        </View>
+	</View>
+</Alloy>

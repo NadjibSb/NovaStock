@@ -26,6 +26,9 @@
 
     <!-- inBoundItem -->
 	<string name="inBound_title">Article entrant</string>
+	<string name="inBoundItem_tf_name">Nom de l'article entrant</string>
+	<string name="inBoundItem_tf_nbr">Quantité de l'article entrant</string>
+	<string name="inBoundItem_QR_desc">Sacnner le QR code de l'article entrant pour obtenir son nom.</string>
 
     <!-- outBoundItem -->
 	<string name="outBound_title">Article sortant</string>
@@ -36,4 +39,5 @@
 
 
 	<string name="btn_save">Sauvegarder</string>
+	<string name="get_item_name">Scannez le QR code de l'article pour obtenir son nom.</string>
 </resources>

@@ -39,6 +39,7 @@
 
 '#tfNbr': {
     hintText: L("newItem_tf_nbr"),
+    keyboardType: Ti.UI.KEYBOARD_TYPE_NUMBER_PAD,
 }
 
 '.QRtext': {
