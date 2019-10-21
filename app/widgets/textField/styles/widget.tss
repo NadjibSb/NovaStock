@@ -7,20 +7,21 @@
 }
 
 '#tfContainer': {
-    height: 48,
+    height: 45,
 }
 
 '#tf': {
     left: 0,
-    //right: 16,
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL,
     font: {
         fontSize: 18,
         fontFamily: "Lato-Regular"
     },
     color: 'black',
+    tintColor: "#000",
     autocorrect: false,
     hintTextColor: 'gray',
-    hintType: Ti.UI.HINT_TYPE_ANIMATED,
     backgroundColor : 'transparent',
 	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
 }
@@ -33,7 +34,7 @@
 '#separator': {
     height: 2,
     borderRadius: 1,
-    backgroundColor: '#AA000000'
+    backgroundColor: '#5A5A5A'
 }
 
 '#errorContainer': {

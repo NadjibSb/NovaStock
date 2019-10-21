@@ -12,7 +12,7 @@
                 </View>
                 <View class="hSize vLayout">
                     <Label class="QRtext"/>
-                    <ImageView class="QRimage" onClick="onScanCode"></ImageView>
+                    <ImageView class="QRimage" module="module/touchView" onClick="onScanCode"></ImageView>
                 </View>
                 <Widget id="btnSave" src="buttonWithIcon"></Widget>
             </ScrollView>

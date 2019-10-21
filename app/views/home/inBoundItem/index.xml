@@ -6,7 +6,7 @@
                 <ScrollView class="vLayout" scrollType="vertical">
                     <View class="hSize vLayout">
                         <Label class="QRtext"/>
-                        <ImageView class="QRimage" onClick="onScanCode"></ImageView>
+                        <ImageView class="QRimage" module="module/touchView" onClick="onScanCode"></ImageView>
                     </View>
                     <View class="hSize vLayout">
                         <Widget id="tfName" class="tf" src="textField" onClick="onGetName"></Widget>

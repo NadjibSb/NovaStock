@@ -5,9 +5,28 @@ const log = require( '/services/logger' )( {
 	} );
 
 
-var navManager = require("/services/navManager");
+var navManager = require("/services/navManager"),
+    barCode = require("/module/barcode");
+
+
+(function constructor(){
+    barCode.onSuccessListener(onScanSuccess);
+})();
 
 
 function navigateUp(e){
     navManager.closeWindow($);
+}
+
+function onScanSuccess(e){
+    log(e, "onScanSuccess");
+    barCode.removeSuccessListener(this);
+}
+
+function onScanCode(e){
+    barCode.scanneCode(e);
+}
+
+function onGetName(e){
+    $.alertBox.show(L("get_item_name"),"Ok")
 }

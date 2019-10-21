@@ -5,9 +5,9 @@ _.extend($, {
 });
 
 function show(text, btnText){
-    $.masque.visible = true;
     $.text.text = text;
     $.btn.setTitle(btnText);
+    $.masque.visible = true;
 }
 
 function exit(e){

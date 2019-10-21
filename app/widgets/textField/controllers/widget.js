@@ -44,7 +44,7 @@ var args = arguments[ 0 ] || {};
         });
         $.tf.addEventListener('blur', (e)=>{
             $.tfContainer.backgroundColor = "transparent";
-            $.separator.backgroundColor = "#AA000000";
+            $.separator.backgroundColor = "#5A5A5A";
             $.separator.height = 2;
         });
     }else {
@@ -64,7 +64,7 @@ function showErrorMessage(text){
 }
 
 function hideErrorMessage(){
-    $.separator.backgroundColor = "#AA000000";
+    $.separator.backgroundColor = "#5A5A5A";
     $.tfContainer.backgroundColor = "transparent";
     $.errorContainer.visible = false
 }

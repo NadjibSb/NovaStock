@@ -32,6 +32,10 @@
 
     <!-- outBoundItem -->
 	<string name="outBound_title">Article sortant</string>
+	<string name="outBoundItem_tf_name">Nom de l'article sortant</string>
+	<string name="outBoundItem_tf_nbr">Quantité de l'article sortant</string>
+	<string name="ourBoundItem_tf_dest">Nom du destinataire</string>
+	<string name="outBoundItem_QR_desc">Sacnner le QR code de l'article sortant pour obtenir son nom.</string>
 
     <!-- inventory -->
 	<string name="inventory_title">Inventaire</string>
