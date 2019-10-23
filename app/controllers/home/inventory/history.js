@@ -1,6 +1,6 @@
 // DEPENDENCIES ------------------------------------------
 const log = require( '/services/logger' )( {
-		tag: "inventory index",
+		tag: "inventory history",
 		hideLog: false
 	} );
 var navManager = require("/services/navManager");
@@ -13,7 +13,9 @@ var navManager = require("/services/navManager");
             template: "itemTemplate",
             title: {text: "Product Title "+i},
             quantity: {text: i%2==0 ? "100":"190000"},
-            expirationText: {text: i%2==0 ? L("expiration_text"):""},
+            icon: {image: i%2==0 ? "/images/icn_destocked_mobile.png":"/images/icn_stocked_mobile.png"},
+            place: {text: i%2==0 ? "Blida center":""},
+            expirationDate: {text: "12/12/2009"},
         })
     }
     $.itemSection.items = data;
@@ -26,5 +28,4 @@ function navigateUp(e){
 
 function onItemclick(e){
     log(e);
-    navManager.openWindow("home/inventory/history");
 }

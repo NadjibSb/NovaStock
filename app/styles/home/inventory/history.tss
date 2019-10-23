@@ -1,9 +1,8 @@
 
 '#navBar': {
-    title: L("inventory_title"),
+    title: L("inventory_history_title"),
     backgroundColor: Alloy.CFG.style.color.primaryColor,
     leftIcon: "/images/icn_topbar_back_mobile.png",
-    rightIcon: "/images/icn_share_mobile.png",
 }
 
 '.itemContainer': {
@@ -23,14 +22,14 @@
 }
 
 '.itemContent': {
-    top: 16,
+    top: 8,
     bottom: 8,
     right: 16,
     left: 16,
 }
 
 '.title': {
-    left: 0,
+    left: 10,
     color: 'black',
     font: {
         fontSize: 18,
@@ -38,16 +37,17 @@
     }
 }
 
+
 '#listView': {
     separatorStyle: Ti.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE,
 }
 
-'.expirationText': {
+'.place': {
     left: 0,
     width: "55%",
-    color: "#FF0000",
+    color: "#404040",
     font: {
-        fontSize: 13,
+        fontSize: 16,
         fontFamily:  Alloy.CFG.style.font.regular,
     }
 }
@@ -79,27 +79,52 @@
     color: 'white'
 }
 
-'.shareBtnContainer': {
-    bottom: "5%",
+
+
+'.itemNameContainer': {
+    top: 16,
+    bottom: 16,
     right: "5%",
-    height: 58,
-    width: 58,
-    borderRadius: 29,
-    backgroundColor: "#66AAAAAA",
-
+    left: "5%",
 }
 
-'#shareBtn': {
-    top: 0,
+'.itemNameText': {
+    text: L("inventory_itemName"),
     left: 0,
-    height: 56,
-    width: 56,
-    borderRadius: 28,
-    backgroundColor: Alloy.CFG.style.color.primaryColor,
-    elevation: 5
-
+    font: {
+        fontFamily: Alloy.CFG.style.font.regular,
+        fontSize: 18
+    },
+    color: "#5A5A5A"
 }
 
-'.shareBtnImage': {
-    image: "/images/icn_share_mobile.png"
+'#itemName': {
+    text: "item Name",
+    left: 8,
+    font: {
+        fontFamily: Alloy.CFG.style.font.regular,
+        fontSize: 18
+    },
+    color: "black"
+}
+
+'.stateImg': {
+    image: "/images/icn_stocked_mobile.png"
+}
+
+'.expirationDateText': {
+    text: L("inventory_item_expiration_date"),
+    font: {
+        fontSize: 12,
+        fontFamily: Alloy.CFG.style.font.regular,
+    },
+    color: "#404040"
+}
+
+'.expirationDate': {
+    font: {
+        fontSize: 12,
+        fontFamily: Alloy.CFG.style.font.bold,
+    },
+    color: "#404040"
 }

@@ -6,8 +6,8 @@
 }
 
 '.tf': {
-    right: "10%",
-    left: "10%",
+    right: "8%",
+    left: "8%",
     top: 8,
 }
 
@@ -27,7 +27,7 @@
     text: L("inBoundItem_QR_desc"),
     top: 32,
     color: 'black',
-    width: "80%",
+    width: "84%",
     font: {
         fontSize: 18,
         fontFamily: Alloy.CFG.style.font.regular,
@@ -40,8 +40,8 @@
 }
 
 '#btnSave': {
-    right: "10%",
-    left: "10%",
+    right: "8%",
+    left: "8%",
     top: 64,
     bottom: 16,
     text: L("btn_save"),

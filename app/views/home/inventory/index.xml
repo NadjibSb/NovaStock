@@ -2,9 +2,36 @@
     <Window>
         <View class="vLayout">
             <Widget src="customNavBar" id="navBar" onLeftButtonClick="navigateUp"></Widget>
-            <ScrollView class="vLayout" scrollType="vertical">
-
-            </ScrollView>
+            <View>
+                <ListView id="listView" top="0" onItemclick="onItemclick">
+                    <Templates>
+                        <ItemTemplate name="itemTemplate">
+                            <View class="itemContainerShadow hSize">
+                                <View class="hSize itemContainer">
+                                    <View class="itemContent hSize vLayout">
+                                        <Label class="title" bindId="title"></Label>
+                                        <View class="hSize" top="8">
+                                            <Label class="expirationText" bindId="expirationText"></Label>
+                                            <View class="qteCont hSize wSize hLayout">
+                                                <Label class="quantityText" ></Label>
+                                                <View class="qteContainer hSize wSize">
+                                                    <Label class="quantity" bindId="quantity"></Label>
+                                                </View>
+                                            </View>
+                                        </View>
+                                    </View>
+                                </View>
+                            </View>
+                        </ItemTemplate>
+                    </Templates>
+                    <ListSection id="itemSection"></ListSection>
+                </ListView>
+                <View class="shareBtnContainer">
+                    <View id="shareBtn">
+                        <ImageView class="shareBtnImage"></ImageView>
+                    </View>
+                </View>
+            </View>
         </View>
     </Window>
 </Alloy>

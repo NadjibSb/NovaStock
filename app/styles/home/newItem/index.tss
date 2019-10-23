@@ -6,15 +6,15 @@
 }
 
 '.tf': {
-    right: "10%",
-    left: "10%",
+    right: "8%",
+    left: "8%",
     top: 8,
 }
 
 '.lbDescroption': {
     top: 32,
-    right: "10%",
-    left: "10%",
+    right: "8%",
+    left: "8%",
     text: L("newItem_description"),
     color: 'black',
     font: {
@@ -58,8 +58,8 @@
 }
 
 '#btnSave': {
-    right: "10%",
-    left: "10%",
+    right: "8%",
+    left: "8%",
     top: 32,
     bottom: 16,
     text: L("btn_save"),

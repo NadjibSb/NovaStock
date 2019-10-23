@@ -1,0 +1,44 @@
+<Alloy>
+    <Window>
+        <View class="vLayout">
+            <Widget src="customNavBar" id="navBar" onLeftButtonClick="navigateUp"></Widget>
+            <ListView id="listView" onItemclick="onItemclick">
+                <Templates>
+                    <ItemTemplate name="itemTemplate">
+                        <View class="itemContainerShadow hSize">
+                            <View class="hSize itemContainer">
+                                <View class="itemContent hSize vLayout" >
+                                    <View class="hSize wSize hLayout" right="0" horizontalWrap="false">
+                                        <Label class="expirationDateText"></Label>
+                                        <Label class="expirationDate" bindId="expirationDate"></Label>
+                                    </View>
+                                    <View class="hSize wSize hLayout" left="0">
+                                        <ImageView class="stateImg" bindId="icon"></ImageView>
+                                        <Label class="title" bindId="title"></Label>
+                                    </View>
+                                    <View class="hSize" top="8">
+                                        <Label class="place" bindId="place"></Label>
+                                        <View class="qteCont hSize wSize hLayout">
+                                            <Label class="quantityText" ></Label>
+                                            <View class="qteContainer hSize wSize">
+                                                <Label class="quantity" bindId="quantity"></Label>
+                                            </View>
+                                        </View>
+                                    </View>
+
+                                </View>
+                            </View>
+                        </View>
+                    </ItemTemplate>
+                </Templates>
+                <ListSection id="itemSection"></ListSection>
+                <HeaderView>
+                    <View class="itemNameContainer hSize hLayout">
+                        <Label class="itemNameText"></Label>
+                        <Label id="itemName"></Label>
+                    </View>
+                </HeaderView>
+            </ListView>
+        </View>
+    </Window>
+</Alloy>
