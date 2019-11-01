@@ -46,6 +46,9 @@
                 <View class="shareBtnContainer hSize">
                     <Widget id="btnShare" src="buttonWithIcon"></Widget>
                 </View>
+                <View id="loaderContainer">
+                    <Widget src="customIndicatorInsideView"></Widget>
+                </View>
             </View>
         </View>
     </Window>

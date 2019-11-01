@@ -23,9 +23,9 @@
 }
 "#activityIndicator[platform=ios]": {
 	style: Titanium.UI.ActivityIndicatorStyle.BIG,
-	indicatorColor: "#58b783"
+	indicatorColor: "#F8A933"
 }
 "#activityIndicator[platform=android]": {
 	style: Titanium.UI.ActivityIndicatorStyle.BIG_DARK,
-    indicatorColor: "#58b783"
+    indicatorColor: "#F8A933"
 }

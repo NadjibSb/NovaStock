@@ -24,7 +24,8 @@ var navManager = require("/services/navManager");
             })
         }
         $.itemSection.items = data;
-    },1000);
+        $.loaderContainer.visible = false;
+    },2000);
 })();
 
 // PRIVATE FUNCTIONS ------------------------------------------

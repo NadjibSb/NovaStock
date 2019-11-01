@@ -98,3 +98,8 @@
     color: Alloy.CFG.style.color.primaryColor,
     fontColor: "white"
 }
+
+'#loaderContainer': {
+    backgroundColor: "#66000000",
+    bubbleParent: false,
+}
