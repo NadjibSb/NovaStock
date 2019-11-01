@@ -34,7 +34,8 @@
 
 '#tfDate': {
     hintText: L("newItem_tf_date"),
-    icon: "/images/icn_expiration_date_mobile.png"
+    icon: "/images/icn_expiration_date_mobile.png",
+    disabled: true,
 }
 
 '#tfNbr': {
@@ -65,4 +66,32 @@
     text: L("btn_save"),
     color: Alloy.CFG.style.color.primaryColor,
     fontColor: "white"
+}
+
+'#pickerView': {
+    backgroundColor: "#88000000",
+    visible: false,
+    bubbleParent: false
+}
+
+'#pickerContainer': {
+    bottom: 0,
+    height: 2,
+    backgroundColor: 'white',
+    bubbleParent: false
+}
+
+'#viewButton': {
+    height: 40,
+    backgroundColor: "#F4F4F4"
+}
+
+'#buttonDone': {
+    right: 16,
+    title: "Done"
+}
+
+'#picker': {
+    color: 'black',
+    tintColor: 'black'
 }

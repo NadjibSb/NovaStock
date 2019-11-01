@@ -2,6 +2,7 @@ _.extend($, {
     showErrorMessage: showErrorMessage,
     hideErrorMessage: hideErrorMessage,
     getText: getText,
+    setText: setText,
     blur: blur
 
 });
@@ -76,6 +77,10 @@ function changeSeparatorStyle(style){
 
 function getText(){
     return $.tf.value ? $.tf.value : ""
+}
+
+function setText(text){
+    return $.tf.value = text;
 }
 
 function blur(){

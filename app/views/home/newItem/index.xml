@@ -2,20 +2,31 @@
     <Window>
         <View class="vLayout">
             <Widget src="customNavBar" id="navBar" onLeftButtonClick="navigateUp"></Widget>
-            <ScrollView class="vLayout" scrollType="vertical">
-                <View class="hSize vLayout">
-                    <Label class="lbDescroption"/>
-                    <Widget id="tfName" class="tf" src="textField"></Widget>
-                    <Widget id="tfNum" class="tf" src="textField"></Widget>
-                    <Widget id="tfDate" class="tf" src="textField"></Widget>
-                    <Widget id="tfNbr" class="tf" src="textField"></Widget>
+            <View>
+                <ScrollView class="vLayout" scrollType="vertical">
+                    <View class="hSize vLayout">
+                        <Label class="lbDescroption"/>
+                        <Widget id="tfName" class="tf" src="textField"></Widget>
+                        <Widget id="tfNum" class="tf" src="textField"></Widget>
+                        <Widget id="tfDate" class="tf" src="textField" onClick="displayDatePicker"></Widget>
+                        <Widget id="tfNbr" class="tf" src="textField"></Widget>
+                    </View>
+                    <View class="hSize vLayout">
+                        <Label class="QRtext"/>
+                        <ImageView class="QRimage" module="module/touchView" onClick="onScanCode"></ImageView>
+                    </View>
+                    <Widget id="btnSave" src="buttonWithIcon"></Widget>
+                </ScrollView>
+                <View platform="ios" id="pickerView" onClick="exitPicker">
+                    <View id="pickerContainer" class="vLayout hSize">
+                        <View id="viewButton" >
+                            <Button id="buttonDone" onClick="chooseDate"></Button>
+                        </View>
+                        <Picker id="picker" type="Ti.UI.PICKER_TYPE_DATE">
+                        </Picker>
+                    </View>
                 </View>
-                <View class="hSize vLayout">
-                    <Label class="QRtext"/>
-                    <ImageView class="QRimage" module="module/touchView" onClick="onScanCode"></ImageView>
-                </View>
-                <Widget id="btnSave" src="buttonWithIcon"></Widget>
-            </ScrollView>
+            </View>
         </View>
     </Window>
 </Alloy>
