@@ -99,7 +99,6 @@
 }
 
 '#itemName': {
-    text: "item Name",
     left: 8,
     font: {
         fontFamily: Alloy.CFG.style.font.regular,
@@ -127,4 +126,19 @@
         fontFamily: Alloy.CFG.style.font.bold,
     },
     color: "#404040"
+}
+'.shareBtnContainer': {
+    bottom: 0,
+    backgroundColor: "#EDEDED",
+}
+
+'#btnShare': {
+    right: "5%",
+    left: "5%",
+    top: 16,
+    bottom: 16,
+    text: L("share_via_email"),
+    icon: "/images/icn_share_mobile.png",
+    color: Alloy.CFG.style.color.primaryColor,
+    fontColor: "white"
 }

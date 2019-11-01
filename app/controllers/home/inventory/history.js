@@ -7,6 +7,7 @@ var navManager = require("/services/navManager");
 
 // CONSTRUCTOR ------------------------------------------
 (function constructor(){
+    $.itemName.text = "Item Name"
     var data = [];
     for (var i = 0; i < 9; i++) {
         data.push({
@@ -16,6 +17,9 @@ var navManager = require("/services/navManager");
             icon: {image: i%2==0 ? "/images/icn_destocked_mobile.png":"/images/icn_stocked_mobile.png"},
             place: {text: i%2==0 ? "Blida center":""},
             expirationDate: {text: "12/12/2009"},
+            properties:{
+                selectionStyle: Alloy.Globals.isAndroid ? "":Titanium.UI.iOS.ListViewCellSelectionStyle.NONE
+            }
         })
     }
     $.itemSection.items = data;
