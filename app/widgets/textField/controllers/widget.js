@@ -36,6 +36,9 @@ var args = arguments[ 0 ] || {};
         $.icon.image = args.icon;
     }
     if (!args.disabled) {
+        $.tfContainer.addEventListener("click",(e)=>{
+            $.tf.focus(e);
+        });
         $.tf.addEventListener('focus', (e)=>{
             $.tfContainer.backgroundColor = "#201461AB";
             $.separator.backgroundColor = "#1461AB";
@@ -49,11 +52,11 @@ var args = arguments[ 0 ] || {};
             $.separator.height = 2;
         });
     }else {
+        $.tfContainer.addEventListener("click",(e)=>{
+            $.trigger('click' , e);
+        });
         $.tf.editable = false;
         $.tf.hintTextColor = "#9E9E9E";
-        $.tf.addEventListener('click', (e)=>{
-            $.trigger('click' , e)
-        });
     }
 })();
 

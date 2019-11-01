@@ -8,6 +8,7 @@
 
 '#tfContainer': {
     height: 45,
+    bubbleParent: false
 }
 
 '#tf': {
@@ -24,6 +25,7 @@
     hintTextColor: 'gray',
     backgroundColor : 'transparent',
 	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+    bubbleParent: true
 }
 
 '#icon': {

@@ -12,7 +12,7 @@ var navManager = require("/services/navManager");
         data.push({
             template: "itemTemplate",
             title: {text: "Product Title "+i},
-            quantity: {text: i%2==0 ? "1200000":"100"},
+            quantity: {text: i%2==0 ? "12000":"100"},
             expirationText: {text: i%2==0 ? L("expiration_text"):""},
             properties:{
                 selectionStyle: Alloy.Globals.isAndroid ? "":Titanium.UI.iOS.ListViewCellSelectionStyle.NONE
@@ -28,6 +28,6 @@ function navigateUp(e){
 }
 
 function onItemclick(e){
-    log(e);
+    //log(e);
     navManager.openWindow("home/inventory/history");
 }

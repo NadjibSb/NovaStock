@@ -7,10 +7,10 @@
 
 '.itemContainer': {
     bottom: 2,
-    right: 2,
+    right: 1,
     borderRadius: 5,
-    elevation: 5,
-    backgroundColor: "#F9F9F9",
+    //elevation: 5,
+    backgroundColor: "#F0F0F0",
 }
 '.itemContainerShadow': {
     top: 8,
@@ -18,7 +18,12 @@
     right: "5%",
     left: "5%",
     borderRadius: 5,
+}
+'.itemContainerShadow[platform=ios]': {
     backgroundColor: "#66AAAAAA"
+}
+'.itemContainerShadow[platform=android]': {
+    backgroundColor: "#F5E5E5E5"
 }
 
 '.itemContent': {
