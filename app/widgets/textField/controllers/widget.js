@@ -60,12 +60,14 @@ var args = arguments[ 0 ] || {};
     }
 })();
 
-function showErrorMessage(text){
+function showErrorMessage(text,args){
     $.lbErrorText.text = text;
     $.lbErrorText.color = "#FF0000";
     $.errorContainer.visible = true;
-    $.tfContainer.backgroundColor = "#19FF0000";
     $.separator.backgroundColor = "#FF0000";
+    if (!(args && args.noBackground)) {
+        $.tfContainer.backgroundColor = "#19FF0000";
+    }
 }
 
 function hideErrorMessage(){
