@@ -9,11 +9,13 @@ var navManager = require("/services/navManager"),
     barCode = require("/module/barcode");
 
 
+// Constructor ------------------------------------
 (function constructor(){
     barCode.onSuccessListener(onScanSuccess);
 })();
 
 
+// PRIVATE FUNCTIONS ------------------------------------
 function navigateUp(e){
     navManager.closeWindow($);
 }

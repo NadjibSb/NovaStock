@@ -3,7 +3,6 @@
     title: L("inventory_title"),
     backgroundColor: Alloy.CFG.style.color.primaryColor,
     leftIcon: "/images/icn_topbar_back_mobile.png",
-    rightIcon: "/images/icn_share_mobile.png",
 }
 
 '.itemContainer': {
@@ -80,26 +79,17 @@
 }
 
 '.shareBtnContainer': {
-    bottom: "5%",
+    bottom: 0,
+    backgroundColor: "#EDEDED",
+}
+
+'#btnShare': {
     right: "5%",
-    height: 58,
-    width: 58,
-    borderRadius: 29,
-    backgroundColor: "#66AAAAAA",
-
-}
-
-'#shareBtn': {
-    top: 0,
-    left: 0,
-    height: 56,
-    width: 56,
-    borderRadius: 28,
-    backgroundColor: Alloy.CFG.style.color.primaryColor,
-    elevation: 5
-
-}
-
-'.shareBtnImage': {
-    image: "/images/icn_share_mobile.png"
+    left: "5%",
+    top: 16,
+    bottom: 16,
+    text: L("share_via_email"),
+    icon: "/images/icn_share_mobile.png",
+    color: Alloy.CFG.style.color.primaryColor,
+    fontColor: "white"
 }

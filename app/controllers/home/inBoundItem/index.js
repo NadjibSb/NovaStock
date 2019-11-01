@@ -3,17 +3,15 @@ const log = require( '/services/logger' )( {
 		tag: "inBoundItem index",
 		hideLog: false
 	} );
-
-
 var navManager = require("/services/navManager"),
     barCode = require("/module/barcode");
 
-
+// CONSTRUCTOR ----------------------------------------
 (function constructor(){
     barCode.onSuccessListener(onScanSuccess);
 })();
 
-
+// PRIVATE FUNCTIONS ------------------------------------
 function navigateUp(e){
     navManager.closeWindow($);
 }

@@ -50,4 +50,5 @@
 	<string name="get_item_name">Scannez le QR code de l'article pour obtenir son nom.</string>
 	<string name="expiration_text">Cet article va expirer dans %s jours.</string>
 	<string name="inventory_item_expiration_date">Effectué le </string>
+	<string name="share_via_email">Partager par mail</string>
 </resources>

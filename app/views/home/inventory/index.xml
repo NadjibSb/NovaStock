@@ -25,11 +25,12 @@
                         </ItemTemplate>
                     </Templates>
                     <ListSection id="itemSection"></ListSection>
+                    <FooterView>
+                        <View height="87"></View>
+                    </FooterView>
                 </ListView>
-                <View class="shareBtnContainer">
-                    <View id="shareBtn">
-                        <ImageView class="shareBtnImage"></ImageView>
-                    </View>
+                <View class="shareBtnContainer hSize">
+                    <Widget id="btnShare" src="buttonWithIcon"></Widget>
                 </View>
             </View>
         </View>

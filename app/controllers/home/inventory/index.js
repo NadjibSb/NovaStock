@@ -12,8 +12,11 @@ var navManager = require("/services/navManager");
         data.push({
             template: "itemTemplate",
             title: {text: "Product Title "+i},
-            quantity: {text: i%2==0 ? "100":"190000"},
+            quantity: {text: i%2==0 ? "1200000":"100"},
             expirationText: {text: i%2==0 ? L("expiration_text"):""},
+            properties:{
+                selectionStyle: Alloy.Globals.isAndroid ? "":Titanium.UI.iOS.ListViewCellSelectionStyle.NONE
+            }
         })
     }
     $.itemSection.items = data;

@@ -49,6 +49,7 @@ var args = arguments[ 0 ] || {};
         });
     }else {
         $.tf.editable = false;
+        $.tf.hintTextColor = "#9E9E9E";
         $.tf.addEventListener('click', (e)=>{
             $.trigger('click' , e)
         });
