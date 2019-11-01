@@ -2,6 +2,7 @@
 <ti:app 
   xmlns:ti="http://ti.appcelerator.org">
   <id>com.dzmob.novastock</id>
+  <!--id>com.novartis.novastock</id-->
   <name>NovaStock</name>
   <version>1.0</version>
   <publisher>not specified</publisher>
